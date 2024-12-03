@@ -909,20 +909,12 @@ video {
   background-image: url('../images/glasses.jpg');
 }
 
-.bg-\[url\(\'images\/products\.jpg\'\)\] {
-  background-image: url('images/products.jpg');
-}
-
-.bg-\[url\(\'images\/sec2\.jpg\'\)\] {
-  background-image: url('images/sec2.jpg');
+.bg-\[url\(\'\.\.\/images\/products\.jpg\'\)\] {
+  background-image: url('../images/products.jpg');
 }
 
 .bg-\[url\(\'\.\.\/images\/sec2\.jpg\'\)\] {
   background-image: url('../images/sec2.jpg');
-}
-
-.bg-\[url\(\'\.\.\/images\/products\.jpg\'\)\] {
-  background-image: url('../images/products.jpg');
 }
 
 .bg-cover {
@@ -1162,6 +1154,10 @@ video {
 
 .opacity-50 {
   opacity: 0.5;
+}
+
+.opacity-70 {
+  opacity: 0.7;
 }
 
 .shadow {
