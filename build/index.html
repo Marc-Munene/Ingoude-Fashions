@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Incourage Textiles</title>
+    <!-- tailwind css -->
+    <link rel="stylesheet" href="css/style.css" />
+    <!-- favicon -->
+    <link rel="icon" href="/build/images/fashions.png" type="image/png" />
+    <!-- google icon -->
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0&icon_names=shopping_cart"
+    />
+    <!-- google fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=SUSE:wght@100..800&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <!-- body -->
+  <body class="min-h-screen w-full">
+
+    <!-- header start -->
+    <header
+      class="flex flex-wrap py-4 items-center bg-[url('/build/images/glasses.jpg')] bg-cover bg-center bg-no-repeat"
+    >
+      <!-- logo image -->
+      <div class="logo-image ml-5">
+        <img src="/build/images/fashions.png" alt="logo" class="w-16" />
+      </div>
+
+      <!-- navigation -->
+      <nav class="mx-auto">
+        <ul class="flex flex-row justify-center space-x-6 text-center">
+          <li
+            class="text-cream hover:text-blue-500 cursor-pointer text-xl font-semibold"
+          >
+            <a href="#">Home</a>
+          </li>
+          <li
+            class="text-cream hover:text-blue-500 cursor-pointer text-xl font-semibold"
+          >
+            <a href="#products">Products</a>
+          </li>
+        </ul>
+      </nav>
+      <!-- cart -->
+      <div class="mr-5">
+        <button popovertarget="mycart">
+          <span class="material-symbols-outlined cursor-pointer" id="btn-cart"
+            >shopping_cart</span
+          >
+        </button>
+      </div>
+    </header>
+    <!-- header end -->
+    <iframe
+      popover
+      id="mycart"
+      src="cart.html"
+      class="hidden justify-center items-center"
+      width="1050px"
+      height="450px"
+    >
+    </iframe>
+
+    <!-- hero -->
+    <section
+      id="hero"
+      class="min-h-screen flex justify-center items-center bg-[url('/build/images/sec2.jpg')] bg-cover bg-center bg-no-repeat relative "
+    >
+      <div class="overlay bg-black opacity-50 absolute inset-0 z-10"></div>
+      <div class="relative z-20 shadow">
+        <h1
+          class="text-cream text-3xl md:text-3xl lg:text-5xl font-mont-font font-bold "
+          id="heading"
+        >
+          welcome to Incourage,<br /><br />
+          Your leading fashion store😎<br><br>
+        </h1>
+
+          <p class="flex justify-end text-cream italic">~Redefining Style, Inspiring Confidence~.</p>
+      </div>
+    </section>
+
+    <!-- hero end -->
+
+
+    <!-- about us -->
+    <section class="bg-jungle-green py-10 min-h-screen">
+      <h1 class="text-cream text-center text-3xl md:text-3xl font-mont-font font-bold">
+        About us
+      </h1>
+      <div
+        class="container mx-auto flex flex-wrap lg:flex-nowrap lg:mx-auto justify-center items-center space-y-8 lg:space-y-0 lg:space-x-8 px-4"
+      >
+        <div class="w-full flex justi">
+          <img
+            src="/build/images/fashions.png"
+            alt=""
+            width="500px"
+            class="m-5 "
+          />
+        </div>
+        <div class="w-full text-cream text-left font-mont-font ">
+          <p class="mb-5">
+            InCourage Textiles is a dynamic fashion and textile company driven
+            by a passion for creativity, quality, and innovation. Founded on the
+            principles of sustainability and style, we are committed to
+            delivering timeless and trendy designs that celebrate individuality
+            and self-expression.
+            <br /><br />
+            With years of expertise in the textile and fashion industry, we
+            pride ourselves on crafting premium fabrics and clothing that blend
+            comfort, durability, and sophistication. From bold patterns to
+            subtle elegance, our collections cater to diverse tastes, ensuring
+            that every piece tells a story of craftsmanship and artistry.
+            <br /><br />
+            At InCourage Textiles, we believe in making a positive impact. Our
+            eco-conscious approach prioritizes sustainable practices, ethical
+            sourcing, and empowering the communities we work with. Through our
+            designs, we not only aim to inspire confidence but also contribute
+            to a better and more stylish world.
+            <br /><br />
+            Join us in redefining fashion—where courage meets creativity, and
+            style knows no bounds.
+          </p>
+
+          <button class="bg-cream text-black p-2 rounded-full  ">
+            Contact Us
+          </button>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- products -->
+    <section
+      id="products"
+      class="min-h-screen relative bg-[url('/build/images/products.jpg')] bg-cover bg-center bg-no-repeat"
+    >
+      <div class="overlay bg-black opacity-50 absolute inset-0 z-10"></div>
+      <div
+        class="container relative z-20 mx-auto px-4 py-16 md:max-w-full md:px-8 lg:max-w-full lg:px-8"
+      >
+        <h1
+          class="flex justify-center font-mont-font font-bold text-cream text-3xl m-5"
+        >
+          Our products
+        </h1>
+
+        <div
+          class="grid grid-cols-1 gap-x-6 gap-y-10 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 xl:gap-x-8"
+        >
+          <div class="group">
+            <img
+              src="/build/images/man.jpg"
+              alt=""
+              class="aspect-square w-full rounded-lg bg-gray-200 object-cover group-hover:opacity-75 xl:aspect-[7/8]"
+            />
+            <h3 class="item-description mt-4 text-sm text-cream">
+              Trench coat
+            </h3>
+            <p class="mt-1 text-lg font-medium text-cream">$48</p>
+            <button class="add-btn bg-blue-400 rounded p-2">ADD</button>
+          </div>
+
+          <div class="group">
+            <img
+              src="/build/images/malcom.jpg"
+              alt=""
+              class="aspect-square w-full rounded-lg bg-gray-200 object-cover group-hover:opacity-75 xl:aspect-[7/8]"
+            />
+            <h3 class="item-description mt-4 text-sm text-cream">Hand-bags</h3>
+            <p class="mt-1 text-lg font-medium text-cream">$35</p>
+            <button class="add-btn bg-blue-400 rounded p-2">ADD</button>
+          </div>
+
+          <div class="group">
+            <img
+              src="/build/images/dresses.jpg"
+              alt=""
+              class="aspect-square w-full rounded-lg bg-gray-200 object-cover group-hover:opacity-75 xl:aspect-[7/8]"
+            />
+            <h3 class="item-description mt-4 text-sm text-cream">Dresses</h3>
+            <p class="mt-1 text-lg font-medium text-cream">$89</p>
+            <button class="add-btn bg-blue-400 rounded p-2">ADD</button>
+          </div>
+
+          <div class="group">
+            <img
+              src="/build/images/t-shirts.jpg"
+              alt=""
+              class="aspect-square w-full rounded-lg bg-gray-200 object-cover group-hover:opacity-75 xl:aspect-[7/8]"
+            />
+            <h3 class="item-description mt-4 text-sm text-cream">T-shirts</h3>
+            <p class="mt-1 text-lg font-medium text-cream">$35</p>
+            <button class="add-btn bg-blue-400 rounded p-2 cursor-pointer">
+              ADD
+            </button>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- products end -->
+
+    <!-- contact --> 
+    <section class="text-gray-600 body-font relative">
+      <div class="container px-5 py-24 mx-auto flex sm:flex-nowrap flex-wrap">
+        <div class="lg:w-2/3 md:w-1/2 bg-gray-300 rounded-lg overflow-hidden sm:mr-10 p-10 flex items-end justify-start relative">
+          <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d31910.84971828588!2d36.798463999999996!3d-1.2582912000000002!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2ske!4v1733223150246!5m2!1sen!2ske" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+          <div class="bg-white relative flex flex-wrap py-6 rounded shadow-md">
+            <div class="lg:w-1/2 px-6">
+              <h2 class="title-font font-semibold text-gray-900 tracking-widest text-xs">ADDRESS</h2>
+              <p class="mt-1">Photo booth tattooed prism, portland taiyaki hoodie neutra typewriter</p>
+            </div>
+            <div class="lg:w-1/2 px-6 mt-4 lg:mt-0">
+              <h2 class="title-font font-semibold text-gray-900 tracking-widest text-xs">EMAIL</h2>
+              <a class="text-indigo-500 leading-relaxed">example@email.com</a>
+              <h2 class="title-font font-semibold text-gray-900 tracking-widest text-xs mt-4">PHONE</h2>
+              <p class="leading-relaxed">123-456-7890</p>
+            </div>
+          </div>
+        </div>
+        <div class="lg:w-1/3 md:w-1/2 bg-white flex flex-col md:ml-auto w-full md:py-8 mt-8 md:mt-0">
+          <h2 class="text-gray-900 text-lg mb-1 font-medium title-font">Feedback</h2>
+          <p class="leading-relaxed mb-5 text-gray-600">Post-ironic portland shabby chic echo park, banjo fashion axe</p>
+          <div class="relative mb-4">
+            <label for="name" class="leading-7 text-sm text-gray-600">Name</label>
+            <input type="text" id="name" name="name" class="w-full bg-white rounded border border-gray-300 focus:border-indigo-500 focus:ring-2 focus:ring-indigo-200 text-base outline-none text-gray-700 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out">
+          </div>
+          <div class="relative mb-4">
+            <label for="email" class="leading-7 text-sm text-gray-600">Email</label>
+            <input type="email" id="email" name="email" class="w-full bg-white rounded border border-gray-300 focus:border-indigo-500 focus:ring-2 focus:ring-indigo-200 text-base outline-none text-gray-700 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out">
+          </div>
+          <div class="relative mb-4">
+            <label for="message" class="leading-7 text-sm text-gray-600">Message</label>
+            <textarea id="message" name="message" class="w-full bg-white rounded border border-gray-300 focus:border-indigo-500 focus:ring-2 focus:ring-indigo-200 h-32 text-base outline-none text-gray-700 py-1 px-3 resize-none leading-6 transition-colors duration-200 ease-in-out"></textarea>
+          </div>
+          <button class="text-white bg-indigo-500 border-0 py-2 px-6 focus:outline-none hover:bg-indigo-600 rounded text-lg">Button</button>
+          <p class="text-xs text-gray-500 mt-3">Chicharrones blog helvetica normcore iceland tousled brook viral artisan.</p>
+        </div>
+      </div>
+    </section>
+      
+
+    <script src="script.js"></script>
+  </body>
+</html>
