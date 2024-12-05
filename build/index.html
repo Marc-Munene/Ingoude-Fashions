@@ -20,13 +20,16 @@
       href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=SUSE:wght@100..800&display=swap"
       rel="stylesheet"
     />
+    <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+  />
   </head>
   <!-- body -->
   <body class="min-h-screen w-full">
-
     <!-- header start -->
     <header
-      class="flex flex-wrap py-4 items-center bg-[url('../images/glasses.jpg')] bg-cover bg-center bg-no-repeat"
+      class="flex py-4 items-center bg-[url('../images/glasses.jpg')] bg-cover bg-center bg-no-repeat"
     >
       <!-- logo image -->
       <div class="logo-image ml-5">
@@ -37,12 +40,12 @@
       <nav class="mx-auto">
         <ul class="flex flex-row justify-center space-x-6 text-center">
           <li
-            class="text-cream hover:text-blue-500 cursor-pointer text-xl font-semibold"
+            class="text-white hover:text-blue-500 cursor-pointer text-xl font-semibold"
           >
             <a href="#">Home</a>
           </li>
           <li
-            class="text-cream hover:text-blue-500 cursor-pointer text-xl font-semibold"
+            class="text-white hover:text-blue-500 cursor-pointer text-xl font-semibold"
           >
             <a href="#products">Products</a>
           </li>
@@ -65,48 +68,46 @@
       class="hidden justify-center items-center"
       width="1050px"
       height="450px"
-    >
-    </div>
+    ></div>
 
     <!-- hero -->
     <section
       id="hero"
-      class="min-h-screen  flex justify-center items-center bg-[url('../images/sec2.jpg')] bg-cover bg-center bg-no-repeat relative "
+      class="min-h-screen flex justify-center items-center bg-[url('../images/sec2.jpg')] bg-cover bg-center bg-no-repeat relative md:mx-auto"
     >
       <div class="overlay bg-black opacity-70 absolute inset-0 z-10"></div>
-      <div class="relative z-20 shadow sm:mx-auto">
+      <div class="relative z-20 shadow">
         <h1
-          class="text-cream text-3xl md:text-3xl lg:text-5xl font-mont-font font-bold "
+          class="text-cream text-3xl md:text-3xl lg:text-5xl font-mont-font font-bold animate__animated animate__fadeInLeft"
           id="heading"
         >
-          welcome to Incourage,<br /><br />
-          Your leading fashion store😎<br><br>
+          welcome to Incourage,
+          <br /><br />
+          Your leading fashion store😎
         </h1>
 
-          <p class="flex justify-end text-cream italic">~Redefining Style, Inspiring Confidence~.</p>
+        <p class="flex justify-end text-cream italic animate__animated animate__zoomInDown animate__delay-1s">
+          ~Redefining Style, Inspiring Confidence~.
+        </p>
       </div>
     </section>
 
     <!-- hero end -->
 
-
     <!-- about us -->
     <section class="bg-jungle-green py-10 min-h-screen">
-      <h1 class="text-cream text-center text-3xl md:text-3xl font-mont-font font-bold">
+      <h1
+        class="text-cream text-center text-3xl md:text-3xl font-mont-font font-bold"
+      >
         About us
       </h1>
       <div
         class="container mx-auto flex flex-wrap lg:flex-nowrap lg:mx-auto justify-center items-center space-y-8 lg:space-y-0 lg:space-x-8 px-4"
       >
         <div class="w-full flex justi">
-          <img
-            src="images/fashions.png"
-            alt=""
-            width="500px"
-            class="m-5 "
-          />
+          <img src="images/fashions.png" alt="" width="500px" class="m-5" />
         </div>
-        <div class="w-full text-cream text-left font-mont-font ">
+        <div class="w-full text-cream text-left font-mont-font">
           <p class="mb-5">
             InCourage Textiles is a dynamic fashion and textile company driven
             by a passion for creativity, quality, and innovation. Founded on the
@@ -130,10 +131,11 @@
             style knows no bounds.
           </p>
 
-          <button class="bg-cream text-black p-2 rounded-full  ">
+          <button
+            class="bg-cream text-black p-2 rounded-full focus:ring hover:ring focus:ring-opacity-75"
+          >
             Contact Us
           </button>
-
         </div>
       </div>
     </section>
@@ -208,8 +210,9 @@
     </section>
     <!-- products end -->
 
-    <!-- contact --> 
-    <section class="text-gray-600 body-font relative">
+    
+    <!-- <section class="text-gray-600 body-font relative">
+
       <div class="container px-5 py-24 mx-auto flex sm:flex-nowrap flex-wrap">
         <div class="lg:w-2/3 md:w-1/2 bg-gray-300 rounded-lg overflow-hidden sm:mr-10 p-10 flex items-end justify-start relative">
           <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d31910.84971828588!2d36.798463999999996!3d-1.2582912000000002!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2ske!4v1733223150246!5m2!1sen!2ske" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
@@ -245,9 +248,99 @@
           <p class="text-xs text-gray-500 mt-3">Chicharrones blog helvetica normcore iceland tousled brook viral artisan.</p>
         </div>
       </div>
+    </section> -->
+    
+    <!-- contact -->
+    <section class="py-6 bg-jungle-green">
+      <div
+        class="grid max-w-6xl grid-cols-1 px-6 mx-auto lg:px-8 md:grid-cols-2 md:divide-x"
+      >
+        <div class="py-6 md:py-0 md:px-6 text-cream">
+          <h1 class="text-4xl font-bold">Get in touch</h1>
+          <p class="pt-2 pb-4">Fill in the form to start a conversation</p>
+          <div class="space-y-4">
+            <p class="flex items-center">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 20 20"
+                fill="currentColor"
+                class="w-5 h-5 mr-2 sm:mr-6"
+              >
+                <path
+                  fill-rule="evenodd"
+                  d="M5.05 4.05a7 7 0 119.9 9.9L10 18.9l-4.95-4.95a7 7 0 010-9.9zM10 11a2 2 0 100-4 2 2 0 000 4z"
+                  clip-rule="evenodd"
+                ></path>
+              </svg>
+              <span>Fake address, 9999 City</span>
+            </p>
+            <p class="flex items-center">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 20 20"
+                fill="currentColor"
+                class="w-5 h-5 mr-2 sm:mr-6"
+              >
+                <path
+                  d="M2 3a1 1 0 011-1h2.153a1 1 0 01.986.836l.74 4.435a1 1 0 01-.54 1.06l-1.548.773a11.037 11.037 0 006.105 6.105l.774-1.548a1 1 0 011.059-.54l4.435.74a1 1 0 01.836.986V17a1 1 0 01-1 1h-2C7.82 18 2 12.18 2 5V3z"
+                ></path>
+              </svg>
+              <span>+254-0 12356789</span>
+            </p>
+            <p class="flex items-center">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 20 20"
+                fill="currentColor"
+                class="w-5 h-5 mr-2 sm:mr-6"
+              >
+                <path
+                  d="M2.003 5.884L10 9.882l7.997-3.998A2 2 0 0016 4H4a2 2 0 00-1.997 1.884z"
+                ></path>
+                <path
+                  d="M18 8.118l-8 4-8-4V14a2 2 0 002 2h12a2 2 0 002-2V8.118z"
+                ></path>
+              </svg>
+              <span>contact@incourage-fashions.com</span>
+            </p>
+          </div>
+        </div>
+        <form
+          novalidate=""
+          class="flex flex-col py-6 space-y-6 md:py-0 md:px-6"
+        >
+          <label class="block text-cream">
+            <span class="mb-1">Full name</span>
+            <input
+              type="text"
+              placeholder="Leroy Jenkins"
+              class="block w-full rounded-md shadow-sm focus:ring focus:ring-opacity-75 focus:dark:ring-violet-600 dark:bg-gray-100"
+            />
+          </label>
+          <label class="block text-cream">
+            <span class="mb-1">Email address</span>
+            <input
+              type="email"
+              placeholder="leroy@jenkins.com"
+              class="block w-full rounded-md shadow-sm focus:ring focus:ring-opacity-75 focus:dark:ring-violet-600 dark:bg-gray-100"
+            />
+          </label>
+          <label class="block text-cream">
+            <span class="mb-1">Message</span>
+            <textarea
+              rows="3"
+              class="block w-full rounded-md focus:ring focus:ring-opacity-75 focus:dark:ring-violet-600 dark:bg-gray-100"
+            ></textarea>
+          </label>
+          <button
+            type="button"
+            class="bg-cream text-black self-center px-8 py-3 text-lg rounded-full focus:ring hover:ring focus:ring-opacity-75"
+          >
+            Submit
+          </button>
+        </form>
+      </div>
     </section>
-      
-
     <script src="script.js"></script>
   </body>
 </html>
